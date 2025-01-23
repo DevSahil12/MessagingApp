@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Closer To "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EveryOne "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-10dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginStart="-25dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Subtitle Text -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Helps you to contact everyone with"
+        android:textSize="15sp"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tvSubtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="just easy way"
+        android:layout_marginStart="-109dp"
+        android:layout_marginTop="-10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Page Indicator -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <View
+            android:layout_width="312dp"
+            android:layout_height="405dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/flow" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#520CCE"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp" />
+</LinearLayout>
