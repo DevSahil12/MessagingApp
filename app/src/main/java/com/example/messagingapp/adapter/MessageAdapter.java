@@ -2,7 +2,6 @@ package com.example.messagingapp.adapter;
 
 import static com.example.messagingapp.mainpages.ChatWindow.receiverImg;
 import static com.example.messagingapp.mainpages.ChatWindow.senderImg;
-
 import android.content.Context;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
@@ -16,24 +15,18 @@ import com.example.messagingapp.R;
 import com.example.messagingapp.modalclass.MessageModalClass;
 import com.google.firebase.auth.FirebaseAuth;
 import com.squareup.picasso.Picasso;
-
 import java.util.ArrayList;
 import java.util.Objects;
-
 import de.hdodenhof.circleimageview.CircleImageView;
-
 public class MessageAdapter extends RecyclerView.Adapter {
-
         Context context;
         ArrayList<MessageModalClass> messagesAdpterArrayList;
         int ITEM_SEND=1;
         int ITEM_RECEIVE=2;
-
         public MessageAdapter(Context context, ArrayList<MessageModalClass> messagesAdpterArrayList) {
             this.context = context;
             this.messagesAdpterArrayList = messagesAdpterArrayList;
         }
-
         @NonNull
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -46,8 +39,6 @@ public class MessageAdapter extends RecyclerView.Adapter {
             }
 
         }
-
-
     @Override
         public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
             MessageModalClass messages = messagesAdpterArrayList.get(position);
@@ -84,7 +75,6 @@ public class MessageAdapter extends RecyclerView.Adapter {
         public int getItemCount() {
             return messagesAdpterArrayList.size();
         }
-
         @Override
         public int getItemViewType(int position) {
             MessageModalClass messages = messagesAdpterArrayList.get(position);
@@ -94,7 +84,6 @@ public class MessageAdapter extends RecyclerView.Adapter {
                 return ITEM_RECEIVE;
             }
         }
-
         static class  SenderViewHolder extends RecyclerView.ViewHolder {
             CircleImageView circleImageView;
             TextView msgtxt;
@@ -105,7 +94,6 @@ public class MessageAdapter extends RecyclerView.Adapter {
                 msgtxt = itemView.findViewById(R.id.msgsendertyp);
 
             }
-
         }
         static class ReciverViewHolder extends RecyclerView.ViewHolder {
             CircleImageView circleImageView;
@@ -117,4 +105,3 @@ public class MessageAdapter extends RecyclerView.Adapter {
             }
         }
     }
-
